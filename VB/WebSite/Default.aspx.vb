@@ -9,8 +9,7 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 Imports System.Web.UI.WebControls.WebParts
 Imports System.Web.UI.HtmlControls
-Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxDataView
+Imports DevExpress.Web
 
 Partial Public Class _Default
 	Inherits System.Web.UI.Page
@@ -36,7 +35,7 @@ Partial Public Class _Default
 		End If
 		Return -1
 	End Function
-	Protected Sub callback_Callback(ByVal source As Object, ByVal e As DevExpress.Web.ASPxCallback.CallbackEventArgs)
+	Protected Sub callback_Callback(ByVal source As Object, ByVal e As DevExpress.Web.CallbackEventArgs)
 		e.Result = e.Parameter
 	End Sub
 End Class

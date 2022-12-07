@@ -8,8 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxDataView;
+using DevExpress.Web;
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -34,7 +33,7 @@ public partial class _Default : System.Web.UI.Page
 			return (int)DataBinder.Eval(container.DataItem, "CategoryId");
 		return -1;
 	}
-	protected void callback_Callback(object source, DevExpress.Web.ASPxCallback.CallbackEventArgs e) {
+	protected void callback_Callback(object source, DevExpress.Web.CallbackEventArgs e) {
 		e.Result = e.Parameter;
 	}
 }
